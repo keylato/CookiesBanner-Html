@@ -1,0 +1,91 @@
+.box {
+    width: 100%;
+    height: 200px;
+}
+body{
+    background-color:pink;
+    color: white;
+}
+.orange{
+    background-color: orange;
+}
+.blue{
+    background-color: blue;
+}
+.pink{
+    background-color: pink;
+}
+.skyblue{
+    background-color: skyblue;
+}
+.green{
+    background-color: green;
+}
+.purple{
+    background-color: purple;
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.cookiebar{
+    height: 120px;
+    display: grid;
+    grid-template-areas:
+        "condition condition button"
+        "link link button";
+    background-color:fuchsia;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.cookiebar .condition{
+    grid-area: condition;
+    height: 100%;
+    font-size: 30px;
+    padding-left: 10%;
+    color: goldenrod;
+    display: flex;
+}
+
+.cookiebar .condition .text{
+    margin: auto auto auto 0;
+    font-family: sans-serif;
+}
+.cookiebar .link{
+    grid-area: link;
+    height: 100%;
+    font-size: 30px;
+    padding-left: 10%;
+    display: flex;
+}
+.cookiebar .link {
+    grid-area: link;
+    height: 100%;
+    font-size: 30px;
+    padding-left: 10%;
+    display: flex;
+}
+.cookiebar .link a{
+    margin: auto auto auto 0;
+    color: green;
+    font-family: sans-serif;
+}
+.cookiebar .buttonbox{
+    grid-area: button;
+    height: 100%;
+    display: flex;
+}
+.cookiebar .buttonbox {
+    margin: auto;
+    background-color: yellow;
+    padding: 5px 14px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 30px;
+    
+}
